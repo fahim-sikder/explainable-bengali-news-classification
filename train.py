@@ -98,8 +98,8 @@ def train(train_data):
 
 if __name__ == "__main__":
     
-    data = pd.read_csv(f'data/cleaned_data.csv')
-    
+    data = pd.read_csv(f'data/even_cleaned_data.csv')
+
     train_data, _ = train_test_split(data, test_size = 0.2, random_state = 2023, stratify = data['label'])
     
     train(train_data)
